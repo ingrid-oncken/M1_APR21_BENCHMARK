@@ -117,8 +117,25 @@ console.log(longestArray());
 
 // 30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
 console.log(`Ex 30 --------------------`);
+let arrayC = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let arrayD = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 
+const greaterSum = function () {
+  //I need to make a loop to sum the numbers of each array
+  let sumC = 0;
+  for (let c = 0; c < arrayC.length; c++) {
+    sumC += arrayC[c];
+  }
 
+  let sumD = 0;
+  for (let d = 0; d < arrayD.length; d++) {
+    sumD += arrayD[d];
+  }
+
+  //now I need to compare the sum's and retur the greater
+  return sumC > sumD ? sumC : sumD;
+};
+console.log(greaterSum());
 
 console.log(`Ex --------------------`);
 console.log(`Ex --------------------`);
