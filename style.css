@@ -1,10 +1,84 @@
-table,
-td {
-  border: 1px solid #333;
-}
+/* CSS EXERCISES
+
+        11) Give a maximum width to the body and center it in the page
+        12) Set every h1 to be centered
+        13) Change the color of each link in the page
+        14) Create a class with a border
+        15) Set table to have rounded corners
+        16) Add margin between every paragraph
+        17) Create a class which change font size and boldness
+        18) Create a class to hide a content
+        19) Add a green border to each td
+        20) Add a dotted red border to each tr (note: tr does not accept a border property ;-) ) */
 
 thead,
 tfoot {
   background-color: #333;
   color: #fff;
+}
+
+/* 11) Give a maximum width to the body and center it in the page */
+body {
+  max-width: 50%;
+  align-content: center;
+  margin: 0 auto;
+}
+
+/* 12) Set every h1 to be centered */
+h1 {
+  text-align: center;
+}
+
+/* 13) Change the color of each link in the page
+        I've added some more links to be more visible */
+a {
+  color: #e4a0f7;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 14) Create a class with a border
+        I applied it to the div.container */
+.class-border {
+  border: 1px solid #8f00ff;
+}
+
+/* 15) Set table to have rounded corners */
+table {
+  border-radius: 10px;
+  border: 1px solid palevioletred;
+}
+
+/* Create a class which change font size and boldness
+    I applied to the, h3, table title */
+.change-font {
+  font-weight: bolder;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  color: blueviolet;
+}
+
+/* 18) Create a class to hide a content */
+.hidden-content {
+  display: none;
+}
+
+/* 19) Add a green border to each td */
+td {
+  border: 1px solid #8aa790;
+  border-radius: 5px;
+}
+
+/* 20) Add a dotted red border to each tr 
+(note: tr does not accept a border property ;-) ) */
+tr,
+td {
+  padding: 3px;
+}
+
+.doted-botton-border {
+  border-bottom-style: dotted;
+  border-bottom-color: crimson;
 }
