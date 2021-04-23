@@ -1,18 +1,3 @@
-// JS EXERCISES
-
-// DOM
-
-// 31) Get element with ID "container" from the page
-// 32) Get every "td" from the page
-// 33) Create a cycle that prints the text inside every td of the page
-// 34) Write a function to change the heading of the page
-// 35) Write a function to add an extra row to the table
-// 36) Write a function to add the class "test" to each row in the table
-// 37) Write a function to add a red background to every link in the page
-// 38) Console log "Page loaded" when the page is correctly loaded
-// 39) Write a function to add new items to a UL
-// 40) Write a function to empty a list
-
 // EXTRA
 
 // 41) Add an eventListener to alert when the mouse is over a link, displaying the URL
@@ -25,6 +10,8 @@
 // 48) Add a pink border to a cell when the mouse is over it
 // 49) Write a function to add a table with 4 rows and 3 columns programmatically
 // 50) Write a function to remove the table from the page
+
+// JS EXERCISES
 
 // 21) Given variable x = "John" and y = "Doe", write on the console log "John <> Doe"
 console.log(`Ex 21 --------------------`);
@@ -137,14 +124,41 @@ const greaterSum = function () {
 };
 console.log(greaterSum());
 
+// DOM
+
+// 31) Get element with ID "container" from the page
+// the anterior exercise did not specify to create and id of container, so I did as a class
+console.log(`Ex 31 --------------------`);
+let container = document.getElementsByClassName("container");
+console.log(container);
+
+console.log(`Ex 32 --------------------`);
+// 32) Get every "td" from the page
+let allTd = document.getElementsByTagName("td");
+console.log(allTd);
+
+// 33) Create a cycle that prints the text inside every td of the page
+const insertTd = function () {
+  for (let i = 0; i < allTd.length; i++) {
+    allTd[i].innerText = "😎";
+  }
+};
+insertTd();
+
 console.log(`Ex --------------------`);
 console.log(`Ex --------------------`);
 console.log(`Ex --------------------`);
 console.log(`Ex --------------------`);
 console.log(`Ex --------------------`);
 console.log(`Ex --------------------`);
-console.log(`Ex --------------------`);
-console.log(`Ex --------------------`);
+
+// 34) Write a function to change the heading of the page
+// 35) Write a function to add an extra row to the table
+// 36) Write a function to add the class "test" to each row in the table
+// 37) Write a function to add a red background to every link in the page
+// 38) Console log "Page loaded" when the page is correctly loaded
+// 39) Write a function to add new items to a UL
+// 40) Write a function to empty a list
 console.log(`Ex --------------------`);
 console.log(`Ex --------------------`);
 console.log(`Ex --------------------`);
