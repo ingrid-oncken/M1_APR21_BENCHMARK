@@ -80,17 +80,29 @@ console.log(`Ex 28 --------------------`);
 const matrix = function () {
   let matrixArray1 = [];
   for (let i = 1; i < 11; i++) {
-    matrixArray1.push(i);
+    // matrixArray1.push(i);
 
     let matrixArray2 = [];
     for (let x = 1; x < 11; x++) {
       matrixArray2.push(Math.floor(Math.random() * 10));
     }
-    console.log(matrixArray2);
+    matrixArray1.push(matrixArray2);
+    //console.log(matrixArray2);
   }
   return matrixArray1;
 };
 console.log(matrix());
+
+// // this is the solution of Hashan
+// 28) Create an array of arrays, in which every array has 10 random numbers
+//         let arr3 = [];
+//             for(let i = 0; i < 1; i++){
+//                 let current = [];
+//                 for(let j = 0; j < 10; j++)
+//                     current.push(Math.floor(Math.random() * 10));
+//                 arr3.push(current);
+//             }
+//             console.log(arr3)
 
 // 29) Create a function that gets 2 arrays and returns the longest one
 console.log(`Ex 29 --------------------`);
