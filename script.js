@@ -155,22 +155,67 @@ const insertTd = function () {
     allTd[i].innerText = "😎";
   }
 };
-insertTd();
-
-console.log(`Ex --------------------`);
-console.log(`Ex --------------------`);
-console.log(`Ex --------------------`);
-console.log(`Ex --------------------`);
-console.log(`Ex --------------------`);
-console.log(`Ex --------------------`);
+// insertTd();
 
 // 34) Write a function to change the heading of the page
+console.log(`Ex 33 --------------------`);
+const changeH1 = function (ex34) {
+  document.getElementsByTagName("h1")[0].innerText = ex34;
+};
+
 // 35) Write a function to add an extra row to the table
+// Why this doesn't work? is it because is inclomplete, like I am not
+// creating the collums either?
+// console.log(`Ex 34 --------------------`);
+// const addRow = function () {
+//   const lastTr = document.getElementsByTagName("tbody")[0].lastChild; //grabbing the last row
+//   const newTr = document.createElement("tr"); //creating new row
+
+//   lastTr.appendChild(newTr); //appending new row to the last row existent
+// };
+
+//Bellow, Teacher Diego's approach:
+const table = document.querySelector("table"); // get reference to the table
+const tr = document.createElement("tr"); // create the row
+
+const addExtraRow = function () {
+  for (let i = 0; i < 4; i++) {
+    // populate the row with 4 columsn
+    const td = document.createElement("td"); //create a table cell
+    td.innerText = i; // set the content
+    tr.appendChild(td); // add it to the row
+  }
+  table.appendChild(tr); // add the row to the table
+};
+
 // 36) Write a function to add the class "test" to each row in the table
+const addClass = function () {
+  // grab all tr's and store them as array
+  const tr = document.getElementsByTagName("tr");
+  //loop each of the tr's adding a new class
+  for (let i = 0; i < tr.length; i++) {
+    tr[i].classList.add("test"); //hopfully this will add the class 'test' to every tr in the page
+  }
+};
+
 // 37) Write a function to add a red background to every link in the page
+//grab all the links and store them as array
+const a = document.getElementsByTagName("a");
+
+const addRedBg = function () {
+  //loop through all of the links stilying their background
+  for (let i = 0; i < a.length; i++) {
+    a[i].style.background = "red";
+  }
+};
 // 38) Console log "Page loaded" when the page is correctly loaded
 // 39) Write a function to add new items to a UL
 // 40) Write a function to empty a list
+
+console.log(`Ex --------------------`);
+console.log(`Ex --------------------`);
+console.log(`Ex --------------------`);
+console.log(`Ex --------------------`);
 console.log(`Ex --------------------`);
 console.log(`Ex --------------------`);
 console.log(`Ex --------------------`);
