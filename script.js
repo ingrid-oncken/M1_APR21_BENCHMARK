@@ -144,12 +144,15 @@ console.log(`Ex 31 --------------------`);
 let container = document.getElementsByClassName("container");
 console.log(container);
 
-console.log(`Ex 32 --------------------`);
 // 32) Get every "td" from the page
+console.log(`Ex 32 --------------------`);
+
 let allTd = document.getElementsByTagName("td");
 console.log(allTd);
 
 // 33) Create a cycle that prints the text inside every td of the page
+console.log(`Ex 33 --------------------`);
+
 const insertTd = function () {
   for (let i = 0; i < allTd.length; i++) {
     allTd[i].innerText = "😎";
@@ -158,12 +161,14 @@ const insertTd = function () {
 // insertTd();
 
 // 34) Write a function to change the heading of the page
-console.log(`Ex 33 --------------------`);
+console.log(`Ex 34 --------------------`);
 const changeH1 = function (ex34) {
   document.getElementsByTagName("h1")[0].innerText = ex34;
 };
 
 // 35) Write a function to add an extra row to the table
+console.log(`Ex 35 --------------------`);
+
 // Why this doesn't work? is it because is inclomplete, like I am not
 // creating the collums either?
 // console.log(`Ex 34 --------------------`);
@@ -189,6 +194,8 @@ const addExtraRow = function () {
 };
 
 // 36) Write a function to add the class "test" to each row in the table
+console.log(`Ex 36 --------------------`);
+
 const addClass = function () {
   // grab all tr's and store them as array
   const tr = document.getElementsByTagName("tr");
@@ -200,6 +207,8 @@ const addClass = function () {
 
 // 37) Write a function to add a red background to every link in the page
 //grab all the links and store them as array
+console.log(`Ex 37 --------------------`);
+
 const a = document.getElementsByTagName("a");
 
 const addRedBg = function () {
@@ -209,17 +218,16 @@ const addRedBg = function () {
   }
 };
 // 38) Console log "Page loaded" when the page is correctly loaded
+console.log(`Ex 38 --------------------`);
+window.onload = function () {
+  console.log("Page Loaded");
+};
 // 39) Write a function to add new items to a UL
-// 40) Write a function to empty a list
+console.log(`Ex 39 --------------------`);
+//1st idea, grab the UL and store into a variable
+const ul = document.querySelector("ul").lastChild;
 
-console.log(`Ex --------------------`);
-console.log(`Ex --------------------`);
-console.log(`Ex --------------------`);
-console.log(`Ex --------------------`);
-console.log(`Ex --------------------`);
-console.log(`Ex --------------------`);
-console.log(`Ex --------------------`);
-console.log(`Ex --------------------`);
-console.log(`Ex --------------------`);
-console.log(`Ex --------------------`);
-console.log(`Ex --------------------`);
+//append child's Li
+
+// 40) Write a function to empty a list
+console.log(`Ex 40 --------------------`);
