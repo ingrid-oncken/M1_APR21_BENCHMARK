@@ -227,7 +227,10 @@ console.log(`Ex 39 --------------------`);
 //1st idea, grab the UL and store into a variable
 const ul = document.querySelector("ul").lastChild;
 
-//append child's Li
+const addToUl = function () {
+  //append child's Li
+  
+};
 
 // 40) Write a function to empty a list
 console.log(`Ex 40 --------------------`);
